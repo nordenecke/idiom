@@ -20,7 +20,8 @@ def idiomcard_generator():
         item_url=web_item_url.get_url_from_item(item)
         if None==item_url:
             print(u"Error in get item URL!")
-            str_not_found='[ '+item+' ]: '+ u'寻他于百度， 不见！'
+#            str_not_found='[ '+item+' ]: '+ u'寻他于百度， 不见！'
+            str_not_found=' '
             item_exception=[]
             item_exception.append(str_not_found)
             idiom_content_list.append(item_exception)

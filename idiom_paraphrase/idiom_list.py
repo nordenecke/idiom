@@ -196,7 +196,8 @@ def put_docx(filename,content_list):
                 r = run._element
                 r.rPr.rFonts.set(qn('w:eastAsia'), u'宋体')
                 run.font.size = Pt(24)
-            else:
+#            else:
+            elif j==2:
                 run = paragraph.add_run(u'\n'+content_list[i][j])
                 run.font.name=u'宋体'
                 r = run._element
